@@ -12,7 +12,7 @@ function TimeCounter({timer}: TimeProp){
   const hour = Math.floor(timer/360000)// what is the formular to make hours
   const minute = Math.floor(timer/60000);
   const secs = Math.floor((timer % 60000) / 1000);
-  const milliSeconds = (timer % 1000) / 10;
+  const milliSeconds = (timer % 1000) ;
 
   return (
     <div>
